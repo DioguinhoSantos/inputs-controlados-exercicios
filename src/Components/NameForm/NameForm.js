@@ -17,12 +17,12 @@ const NameForm = ({name, onChangeName, age, onChangeAge, email, onChangeEmail, c
 
         <label>
           E-mail:
-          <Input  placeholder="usuario@usuario.com" value={email} onChange={onChangeEmail} type='email' required/>
+          <Input  placeholder="usuario@usuario.com" value={email} onChange={onChangeEmail} type={'email'} required/>
         </label>
 
         <label>
           Confirmação de e-mail:
-          <Input  placeholder="usuario@usuario.com" value={confirmaEmail} onChange={onChangeConfirmaEmail} type='email' required/>
+          <Input  placeholder="usuario@usuario.com" value={confirmaEmail} onChange={onChangeConfirmaEmail} type={'email'} required/>
         </label>
 
       <button onClick={sendData}>Enviar dados</button>
