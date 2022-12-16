@@ -20,3 +20,8 @@ export const Input = styled.input`
     width: 100%;
     padding: 8px;
 `
+
+export const Select = styled.select`
+    width: 100%;
+    padding: 8px;
+`

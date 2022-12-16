@@ -9,7 +9,7 @@ const [name, setName] = useState("")
 const [age, setAge] = useState("")
 const [email, setEmail] = useState("")
 const [confirmaEmail, setConfirmaEmail] = useState("")
-const [formFlow, setFormFlow] = useState(1) 
+const [formFlow, setFormFlow] = useState(2) 
 
 //você não precisa mexer neste estado, ele faz parte da lógica da linha 30 do JSX
 
@@ -54,7 +54,11 @@ const sendData = () => {
   return (
     <MainContainer>
       <h2>Formulário de inscrição</h2>
-      {formFlow === 1 ? <NameForm name={name} onChangeName={onChangeName} age={age} onChangeAge={onChangeAge} email={email} onChangeEmail={onChangeEmail} confirmaEmail={confirmaEmail} onChangeConfirmaEmail={onChangeConfirmaEmail}
+      {formFlow === 1 ? <NameForm 
+      name={name} onChangeName={onChangeName}
+      age={age} onChangeAge={onChangeAge}
+      email={email} onChangeEmail={onChangeEmail}
+      confirmaEmail={confirmaEmail} onChangeConfirmaEmail={onChangeConfirmaEmail}
       sendData={sendData}/> : <ConfirmationForm />}
     </MainContainer>
   )
